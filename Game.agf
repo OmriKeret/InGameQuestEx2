@@ -6,7 +6,7 @@
       <GameName xml:space="preserve">Zombie Quest</GameName>
       <UniqueID>97824046</UniqueID>
       <GUIDAsString>{ca113ed2-724e-461c-84f1-79a63a399aff}</GUIDAsString>
-      <ColorDepth>HighColor</ColorDepth>
+      <ColorDepth>TrueColor</ColorDepth>
       <Resolution>R1024x768</Resolution>
       <GraphicsDriver>DX5</GraphicsDriver>
       <CompressSprites>False</CompressSprites>
@@ -634,9 +634,9 @@
               <Visibility>Normal</Visibility>
               <PopupYPos>0</PopupYPos>
               <ZOrder>0</ZOrder>
-              <BorderColor>1</BorderColor>
+              <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
-              <BackgroundColor>8</BackgroundColor>
+              <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <ID>0</ID>
               <Name>gStatusline</Name>
@@ -645,8 +645,8 @@
           </GUIMain>
           <GUIMain>
             <NormalGUI>
-              <OnClick />
-              <Height>147</Height>
+              <OnClick>gIconbar_OnClick</OnClick>
+              <Height>85</Height>
               <Width>1024</Width>
               <Left>0</Left>
               <Top>0</Top>
@@ -654,9 +654,9 @@
               <Visibility>MouseYPos</Visibility>
               <PopupYPos>13</PopupYPos>
               <ZOrder>1</ZOrder>
-              <BorderColor>1</BorderColor>
+              <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
-              <BackgroundColor>8</BackgroundColor>
+              <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <ID>1</ID>
               <Name>gIconbar</Name>
@@ -670,14 +670,14 @@
                 <TextAlignment>TopMiddle</TextAlignment>
                 <TextColor>16</TextColor>
                 <Font>0</Font>
-                <PushedImage>0</PushedImage>
+                <PushedImage>41</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
-                <Image>2044</Image>
+                <Image>40</Image>
                 <Text />
-                <Height>102</Height>
+                <Height>78</Height>
                 <Locked>False</Locked>
-                <Width>102</Width>
-                <Left>0</Left>
+                <Width>78</Width>
+                <Left>22</Left>
                 <Top>0</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
@@ -691,14 +691,14 @@
                 <TextAlignment>TopMiddle</TextAlignment>
                 <TextColor>16</TextColor>
                 <Font>0</Font>
-                <PushedImage>0</PushedImage>
+                <PushedImage>35</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
-                <Image>2045</Image>
+                <Image>34</Image>
                 <Text />
-                <Height>147</Height>
+                <Height>78</Height>
                 <Locked>False</Locked>
-                <Width>121</Width>
-                <Left>88</Left>
+                <Width>78</Width>
+                <Left>115</Left>
                 <Top>0</Top>
                 <ZOrder>1</ZOrder>
                 <ID>1</ID>
@@ -712,14 +712,14 @@
                 <TextAlignment>TopMiddle</TextAlignment>
                 <TextColor>16</TextColor>
                 <Font>0</Font>
-                <PushedImage>0</PushedImage>
+                <PushedImage>39</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
-                <Image>2046</Image>
+                <Image>38</Image>
                 <Text />
-                <Height>147</Height>
+                <Height>78</Height>
                 <Locked>False</Locked>
-                <Width>121</Width>
-                <Left>170</Left>
+                <Width>78</Width>
+                <Left>221</Left>
                 <Top>0</Top>
                 <ZOrder>9</ZOrder>
                 <ID>2</ID>
@@ -733,14 +733,14 @@
                 <TextAlignment>TopMiddle</TextAlignment>
                 <TextColor>65535</TextColor>
                 <Font>0</Font>
-                <PushedImage>0</PushedImage>
+                <PushedImage>37</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
-                <Image>2047</Image>
+                <Image>36</Image>
                 <Text />
-                <Height>69</Height>
+                <Height>78</Height>
                 <Locked>False</Locked>
-                <Width>81</Width>
-                <Left>257</Left>
+                <Width>78</Width>
+                <Left>323</Left>
                 <Top>0</Top>
                 <ZOrder>5</ZOrder>
                 <ID>3</ID>
@@ -754,14 +754,14 @@
                 <TextAlignment>TopMiddle</TextAlignment>
                 <TextColor>16</TextColor>
                 <Font>0</Font>
-                <PushedImage>0</PushedImage>
+                <PushedImage>32</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
-                <Image>2048</Image>
+                <Image>31</Image>
                 <Text />
-                <Height>147</Height>
+                <Height>78</Height>
                 <Locked>False</Locked>
-                <Width>121</Width>
-                <Left>339</Left>
+                <Width>78</Width>
+                <Left>434</Left>
                 <Top>0</Top>
                 <ZOrder>6</ZOrder>
                 <ID>4</ID>
@@ -782,7 +782,7 @@
                 <Height>147</Height>
                 <Locked>False</Locked>
                 <Width>121</Width>
-                <Left>424</Left>
+                <Left>554</Left>
                 <Top>0</Top>
                 <ZOrder>7</ZOrder>
                 <ID>5</ID>
@@ -803,7 +803,7 @@
                 <Height>147</Height>
                 <Locked>False</Locked>
                 <Width>121</Width>
-                <Left>506</Left>
+                <Left>668</Left>
                 <Top>0</Top>
                 <ZOrder>8</ZOrder>
                 <ID>6</ID>
@@ -824,7 +824,7 @@
                 <Height>102</Height>
                 <Locked>False</Locked>
                 <Width>102</Width>
-                <Left>591</Left>
+                <Left>786</Left>
                 <Top>0</Top>
                 <ZOrder>2</ZOrder>
                 <ID>7</ID>
@@ -832,7 +832,7 @@
               </GUIButton>
               <GUIButton>
                 <OnClick>btnIconExit_Click</OnClick>
-                <ClickAction>RunScript</ClickAction>
+                <ClickAction>NoAction</ClickAction>
                 <NewModeNumber>0</NewModeNumber>
                 <ClipImage>False</ClipImage>
                 <TextAlignment>TopMiddle</TextAlignment>
@@ -842,10 +842,10 @@
                 <MouseoverImage>0</MouseoverImage>
                 <Image>2052</Image>
                 <Text />
-                <Height>147</Height>
+                <Height>51</Height>
                 <Locked>False</Locked>
                 <Width>121</Width>
-                <Left>675</Left>
+                <Left>899</Left>
                 <Top>0</Top>
                 <ZOrder>3</ZOrder>
                 <ID>8</ID>
@@ -1750,6 +1750,26 @@
               </GUIButton>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>50</Height>
+              <Width>70</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>False</Clickable>
+              <Visibility>Normal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>33</BackgroundImage>
+              <ID>9</ID>
+              <Name>gMenuSlider</Name>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -2272,10 +2292,10 @@ stop
     <Cursors>
       <MouseCursor>
         <ID>0</ID>
-        <HotspotX>6</HotspotX>
-        <HotspotY>15</HotspotY>
+        <HotspotX>0</HotspotX>
+        <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>2054</Image>
+        <Image>30</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -2284,10 +2304,10 @@ stop
       </MouseCursor>
       <MouseCursor>
         <ID>1</ID>
-        <HotspotX>8</HotspotX>
-        <HotspotY>8</HotspotY>
+        <HotspotX>0</HotspotX>
+        <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>2056</Image>
+        <Image>27</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -2296,10 +2316,10 @@ stop
       </MouseCursor>
       <MouseCursor>
         <ID>2</ID>
-        <HotspotX>8</HotspotX>
-        <HotspotY>8</HotspotY>
+        <HotspotX>0</HotspotX>
+        <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>2057</Image>
+        <Image>29</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -2308,10 +2328,10 @@ stop
       </MouseCursor>
       <MouseCursor>
         <ID>3</ID>
-        <HotspotX>8</HotspotX>
-        <HotspotY>8</HotspotY>
+        <HotspotX>0</HotspotX>
+        <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>2058</Image>
+        <Image>28</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -2772,7 +2792,7 @@ stop
                 <Sprites>
                   <Sprite Slot="6" Width="159" Height="151" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
-                      <FileName>C:\InGame\Game 2\Chars\Sam\sam_injured.png</FileName>
+                      <FileName>C:\InGame\Game 2\Chars\Sam\sam_injured copy.png</FileName>
                     </Source>
                   </Sprite>
                 </Sprites>
@@ -2780,104 +2800,194 @@ stop
               <SpriteFolder Name="Jack">
                 <SubFolders />
                 <Sprites>
-                  <Sprite Slot="36" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="7" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00000.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="37" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="8" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00001.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="38" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="9" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00002.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="39" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="10" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00003.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="40" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="11" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00004.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="41" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="12" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00005.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="42" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="13" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00006.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="43" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="14" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00007.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="44" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="15" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00008.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="45" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="16" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00009.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="46" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="17" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00010.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="47" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="18" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00011.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="48" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="19" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00012.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="49" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="20" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00013.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="50" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="21" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00014.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="51" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="22" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00015.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="52" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="23" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00016.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="53" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="24" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00017.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="54" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="25" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00018.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="55" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                  <Sprite Slot="26" Width="120" Height="203" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Chars\Jack\walk right\jack walk_00019.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+            </SubFolders>
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="Mouse Curser">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="27" Width="40" Height="40" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\InGame\Game 2\button\action_mouse\look_at_mouse.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="28" Width="40" Height="40" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\InGame\Game 2\button\action_mouse\talk_to_mouse.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="29" Width="40" Height="40" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\InGame\Game 2\button\action_mouse\touch_mouse.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="30" Width="40" Height="40" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\InGame\Game 2\button\action_mouse\walk_to_mouse.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Gui">
+            <SubFolders>
+              <SpriteFolder Name="Ingame-menu">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="31" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\bag_norm.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="32" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\bag_press.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="33" Width="68" Height="38" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\buttons_arrow.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="34" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\look_at_norm.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="35" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\look_at_press.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="36" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\talk_to_norm.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="37" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\talk_to_press.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="38" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\touch_norm.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="39" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\touch_press.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="40" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\walk_to_norm.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="41" Width="78" Height="78" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\button\walk_to_press.png</FileName>
                     </Source>
                   </Sprite>
                 </Sprites>
@@ -3254,7 +3364,15 @@ stop
               <Loop>
                 <ID>3</ID>
                 <RunNextLoop>False</RunNextLoop>
-                <Frames />
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>6</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
               </Loop>
             </Loops>
           </View>
@@ -3268,140 +3386,140 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>36</Image>
+                    <Image>7</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>1</ID>
-                    <Image>37</Image>
+                    <Image>8</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>2</ID>
-                    <Image>38</Image>
+                    <Image>9</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>3</ID>
-                    <Image>39</Image>
+                    <Image>10</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>4</ID>
-                    <Image>40</Image>
+                    <Image>11</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>5</ID>
-                    <Image>41</Image>
+                    <Image>12</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>6</ID>
-                    <Image>42</Image>
+                    <Image>13</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>7</ID>
-                    <Image>43</Image>
+                    <Image>14</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>8</ID>
-                    <Image>44</Image>
+                    <Image>15</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>9</ID>
-                    <Image>45</Image>
+                    <Image>16</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>10</ID>
-                    <Image>46</Image>
+                    <Image>17</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>11</ID>
-                    <Image>47</Image>
+                    <Image>18</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>12</ID>
-                    <Image>48</Image>
+                    <Image>19</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>13</ID>
-                    <Image>49</Image>
+                    <Image>20</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>14</ID>
-                    <Image>50</Image>
+                    <Image>21</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>15</ID>
-                    <Image>51</Image>
+                    <Image>22</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>16</ID>
-                    <Image>52</Image>
+                    <Image>23</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>17</ID>
-                    <Image>53</Image>
+                    <Image>24</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>18</ID>
-                    <Image>54</Image>
+                    <Image>25</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>19</ID>
-                    <Image>55</Image>
+                    <Image>26</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -3410,144 +3528,144 @@ stop
               </Loop>
               <Loop>
                 <ID>1</ID>
-                <RunNextLoop>True</RunNextLoop>
+                <RunNextLoop>False</RunNextLoop>
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>36</Image>
+                    <Image>7</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>1</ID>
-                    <Image>37</Image>
+                    <Image>8</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>2</ID>
-                    <Image>38</Image>
+                    <Image>9</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>3</ID>
-                    <Image>39</Image>
+                    <Image>10</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>4</ID>
-                    <Image>40</Image>
+                    <Image>11</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>5</ID>
-                    <Image>41</Image>
+                    <Image>12</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>6</ID>
-                    <Image>42</Image>
+                    <Image>13</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>7</ID>
-                    <Image>43</Image>
+                    <Image>14</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>8</ID>
-                    <Image>44</Image>
+                    <Image>15</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>9</ID>
-                    <Image>45</Image>
+                    <Image>16</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>10</ID>
-                    <Image>46</Image>
+                    <Image>17</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>11</ID>
-                    <Image>47</Image>
+                    <Image>18</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>12</ID>
-                    <Image>48</Image>
+                    <Image>19</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>13</ID>
-                    <Image>49</Image>
+                    <Image>20</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>14</ID>
-                    <Image>50</Image>
+                    <Image>21</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>15</ID>
-                    <Image>51</Image>
+                    <Image>22</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>16</ID>
-                    <Image>52</Image>
+                    <Image>23</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>17</ID>
-                    <Image>53</Image>
+                    <Image>24</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>18</ID>
-                    <Image>54</Image>
+                    <Image>25</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>19</ID>
-                    <Image>55</Image>
+                    <Image>26</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -3560,140 +3678,140 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>36</Image>
+                    <Image>7</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>1</ID>
-                    <Image>37</Image>
+                    <Image>8</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>2</ID>
-                    <Image>38</Image>
+                    <Image>9</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>3</ID>
-                    <Image>39</Image>
+                    <Image>10</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>4</ID>
-                    <Image>40</Image>
+                    <Image>11</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>5</ID>
-                    <Image>41</Image>
+                    <Image>12</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>6</ID>
-                    <Image>42</Image>
+                    <Image>13</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>7</ID>
-                    <Image>43</Image>
+                    <Image>14</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>8</ID>
-                    <Image>44</Image>
+                    <Image>15</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>9</ID>
-                    <Image>45</Image>
+                    <Image>16</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>10</ID>
-                    <Image>46</Image>
+                    <Image>17</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>11</ID>
-                    <Image>47</Image>
+                    <Image>18</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>12</ID>
-                    <Image>48</Image>
+                    <Image>19</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>13</ID>
-                    <Image>49</Image>
+                    <Image>20</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>14</ID>
-                    <Image>50</Image>
+                    <Image>21</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>15</ID>
-                    <Image>51</Image>
+                    <Image>22</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>16</ID>
-                    <Image>52</Image>
+                    <Image>23</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>17</ID>
-                    <Image>53</Image>
+                    <Image>24</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>18</ID>
-                    <Image>54</Image>
+                    <Image>25</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
                     <ID>19</ID>
-                    <Image>55</Image>
+                    <Image>26</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -3818,16 +3936,16 @@ See KeyboardMovement.txt for details.
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <Name>Music</Name>
         <TypeID>2</TypeID>
+        <Name>Music</Name>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>30</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <Name>Sound</Name>
         <TypeID>3</TypeID>
+        <Name>Sound</Name>
         <MaxChannels>0</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
