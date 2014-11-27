@@ -71,7 +71,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName xml:space="preserve">Zombie Quest</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>19</AudioIndexer>
+      <AudioIndexer>22</AudioIndexer>
     </Settings>
     <LipSync>
       <Type>None</Type>
@@ -640,6 +640,18 @@
           <UnloadedRoom>
             <Number>7</Number>
             <Description>About</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>8</Number>
+            <Description>EndScene</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>9</Number>
+            <Description>Passer12</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>10</Number>
+            <Description>Pass23</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -1668,15 +1680,15 @@
               <OnClick />
               <Height>200</Height>
               <Width>500</Width>
-              <Left>400</Left>
-              <Top>300</Top>
+              <Left>100</Left>
+              <Top>600</Top>
               <Clickable>True</Clickable>
               <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
               <ZOrder>0</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
-              <BackgroundColor>8</BackgroundColor>
+              <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <ID>11</ID>
               <Name>gDead</Name>
@@ -1690,15 +1702,15 @@
                 <TextAlignment>Centred</TextAlignment>
                 <TextColor>0</TextColor>
                 <Font>0</Font>
-                <PushedImage>246</PushedImage>
+                <PushedImage>430</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
-                <Image>245</Image>
+                <Image>429</Image>
                 <Text />
-                <Height>41</Height>
+                <Height>37</Height>
                 <Locked>False</Locked>
-                <Width>172</Width>
-                <Left>147</Left>
-                <Top>78</Top>
+                <Width>158</Width>
+                <Left>140</Left>
+                <Top>53</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
                 <Name>RestartLeveld</Name>
@@ -1807,8 +1819,8 @@
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
-            <CursorImage>0</CursorImage>
-            <Image>0</Image>
+            <CursorImage>431</CursorImage>
+            <Image>431</Image>
             <Description xml:space="preserve">Stick and Vine</Description>
             <Name>iStickVine</Name>
             <Properties />
@@ -1865,6 +1877,60 @@
             <Image>0</Image>
             <Description>Maches</Description>
             <Name>iMach</Name>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <ID>10</ID>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <CursorImage>0</CursorImage>
+            <Image>0</Image>
+            <Description>Fertilizer</Description>
+            <Name>iFertilizer</Name>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <ID>11</ID>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <CursorImage>0</CursorImage>
+            <Image>0</Image>
+            <Description>DrainCleaner</Description>
+            <Name>iDrainCleaner</Name>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <ID>12</ID>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <CursorImage>0</CursorImage>
+            <Image>0</Image>
+            <Description>Battery</Description>
+            <Name>iBattery</Name>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -2117,7 +2183,7 @@
             <Interactions>
               <Event Index="0">cSam_Look</Event>
               <Event Index="1">cSam_Interact</Event>
-              <Event Index="2" />
+              <Event Index="2">cSam_Talk</Event>
               <Event Index="3">cSam_UseInv</Event>
               <Event Index="4" />
               <Event Index="5">cSam_PickUp</Event>
@@ -2134,7 +2200,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>1</StartingRoom>
+            <StartingRoom>2</StartingRoom>
             <StartX>444</StartX>
             <StartY>665</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -2169,7 +2235,7 @@
             <ID>3</ID>
             <ScriptName>cOscar</ScriptName>
             <RealName>Oscar</RealName>
-            <NormalView>1</NormalView>
+            <NormalView>9</NormalView>
             <SpeechView>9</SpeechView>
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
@@ -2209,20 +2275,20 @@
             <ID>4</ID>
             <ScriptName>cZombie1</ScriptName>
             <RealName>Zombie1</RealName>
-            <NormalView>1</NormalView>
+            <NormalView>12</NormalView>
             <SpeechView>0</SpeechView>
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>-1</StartingRoom>
-            <StartX>160</StartX>
-            <StartY>120</StartY>
+            <StartingRoom>3</StartingRoom>
+            <StartX>621</StartX>
+            <StartY>794</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
-            <MovementSpeed>5</MovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
             <MovementSpeedY>0</MovementSpeedY>
-            <AnimationDelay>4</AnimationDelay>
-            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <AnimationDelay>5</AnimationDelay>
+            <SpeechAnimationDelay>2</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <Solid>True</Solid>
             <Clickable>True</Clickable>
@@ -2249,7 +2315,7 @@
             <ID>5</ID>
             <ScriptName>cZombie2</ScriptName>
             <RealName>Zombie2</RealName>
-            <NormalView>1</NormalView>
+            <NormalView>12</NormalView>
             <SpeechView>0</SpeechView>
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
@@ -2258,10 +2324,50 @@
             <StartX>160</StartX>
             <StartY>120</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
-            <MovementSpeed>5</MovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
             <MovementSpeedY>0</MovementSpeedY>
-            <AnimationDelay>4</AnimationDelay>
+            <AnimationDelay>5</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>True</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>True</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6">cZombie2_Mode8</Event>
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>6</ID>
+            <ScriptName>cZombie3</ScriptName>
+            <RealName>Zombie3</RealName>
+            <NormalView>12</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>-1</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <AnimationDelay>5</AnimationDelay>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <Solid>True</Solid>
@@ -2281,7 +2387,7 @@
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
-              <Event Index="6">cZombie2_Mode8</Event>
+              <Event Index="6">cZombie3_Mode8</Event>
               <Event Index="7" />
             </Interactions>
           </Character>
@@ -2316,7 +2422,7 @@ Nick: We dont have time for this!
 Nick: I see the bushes moving, they are coming!
 Nick: If we don't get going now we are good as dead.
 Oscar: we are not leaving her.
-Sam: Haaa.. Go save yourself, I will just hold you off..
+Sam: Haaa.. please Help me
 Jack: ENOUGH!
 return
 @1
@@ -2334,7 +2440,7 @@ stop
   cJack.FaceCharacter(cNick);
 Jack: We don't leave anyone..!
 Oscar: We need to get something to stebelize her leg
-Nick: FUCK I CAN SEE THEM, over that hill.
+Nick: FUCK I CAN SEE THEM.
 Nick: WE NEED TO GO NOW!
    SetTimer(1,40);
    SetTimer(4,120);
@@ -2369,7 +2475,7 @@ Nick: Jack: We are so close..
 Nick: Jack: I can't belive Sam isn't with us..
   aZombieGoar.Play();
    Wait(10);
-Nick: Nick: "Shee! be Quiet.. They are close" 
+Nick: Nick: Shee! be Quiet.. They are close
   Wait(50);
   aZombieGoar2.Play();
   Wait(10);
@@ -2391,16 +2497,16 @@ Jack: Jack: ...
 Nick: Nick: Shut you'r whine mouth right now!
 Nick: Nick: The Deados will hear you
 Sam: Sam: Fuck you Nick! 
-Jack: Jack: Just a few more days.. 
-Jack: Jack: The city of the new-world is close.. I can feel it
+Nick: Jack: Just a few more days.. 
+Nick: Jack: The city of the new-world is close.. I can feel it
 Nick: Nick: This new world mumbo-jambo I can't belive i've listen to you
 Nick: Nick: I should have never follow you, jack.
   aZombieGoar.Play();
    Wait(10);
-Nick: Oscar: "Shee! be Quiet.. They are close" 
+Nick: Oscar: Shee! be Quiet.. They are close 
   Wait(50);
   aZombieGoar2.Play();
-  Wait(10);
+  Wait(5);
 Nick: Nick: AHHHHH
 Nick: Oscar: Quick Jack, get the flash light out of your beg!
 Nick: Nick: Quick Jack, get the flash light out of your beg!
@@ -2422,6 +2528,460 @@ Nick: Jack: Run!
 stop
 ]]></Script>
             <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>4</ID>
+            <Name>dOscarDialog</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+option-off 4
+return
+@1
+Oscar: Don't be..
+Oscar: We all knew the risks
+return
+@2
+Oscar: Sorry Jack..Once they spot a prey they never let go..
+Oscar: we will figure something out..
+Jack: I hope so..
+return
+@3
+Oscar: It looks like an old farmer shack..
+Oscar: It probabley was his warehouse
+Oscar: Maybe we could build a bomb
+option-on 4
+return
+@4
+goto-dialog 5
+return
+@5
+stop]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">I am sorry I brought you with me into this</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">You think the zombies will leave us?</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">You got any ideas?</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text xml:space="preserve">Tell me more about the bomb</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text xml:space="preserve">go away</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>5</ID>
+            <Name>dKnowBombDialog</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+Oscar: What do you want to know?
+return
+@1
+Oscar: We need: Fertilizer ,drain Cleaner and a Big battery. 
+Oscar: Bring them to me when you find them
+  toldAboutBomob = true;
+return
+@2
+Oscar: Before this madness..back in the old world I was an explosive engineer.
+return
+@3
+  if(GotBattery) {
+Oscar: We got battery
+  }
+  if(GotFertilizer) {
+Oscar: We got fertilizer
+  }
+  if(GotDrainCleaner) {
+Oscar: We got drain cleaner
+  }
+  if(!GotBattery && !GotFertilizer && !GotDrainCleaner) {
+Oscar: We got nothing   
+  }
+  
+return
+@4
+stop
+@5
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">What are the ingredient?</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">How do you know how to build a bomb?</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">What do we already have?</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text>Nothing</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text>Leave</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>6</ID>
+            <Name>dShackFirstSam</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+Sam: This was close..
+Jack: I don't think we lost them
+Jack: But the table we used to block the door will hold them off for now
+Oscar: Where is Nick?!
+Jack: The deados had him.. he is one of them now
+Oscar:..
+Sam:..
+Jack: We are close.. we need to figure something out
+Jack: I lost my flashlight in the run..
+Oscar: damn, I can't see a thing
+Jack: maybe I can find a lamp or something
+stop
+
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>7</ID>
+            <Name>dShackFirst</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+Oscar: This was close..
+Jack: I don't think we lost them
+Jack: But the table we used to block the door will hold them off for now
+Oscar: Where is Nick?!
+Jack: The deados had him.. he is one of them now
+Jack:..
+Oscar:..
+Jack: We are close.. we need to figure something out
+Jack: I lost my flashlight in the run..
+Oscar: damn, I can't see a thing
+Jack: maybe I can find a lamp or something
+stop
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>8</ID>
+            <Name>dShackSam</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+Sam: I am so scared..
+Sam: I think this is the end for us..
+return
+@1
+Sam: I hope you will think of something..
+stop
+@2
+Sam: We should have never left for these legend city!
+Sam: ehhh.. I don't want to die... ehhh
+stop
+@3
+Sam: ehhh.. I don't want to die... ehhh
+stop
+
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">don't be scared.. we will figure something out</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">I'm scared to</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">This is the end of our road..</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>9</ID>
+            <Name>dEndDialogSam</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+Oscar: We got everything we need
+Oscar: Just give me a second..
+Oscar: ..
+Jack: What is it?
+Oscar: I just got it..
+Jack: What?
+Oscar: We can't active it remotly..
+Sam: What do you mean??
+Oscar: It means that when we turn the battery on
+Oscar: The bomb will detonate
+Sam: No there's got to be a way!
+Oscar: There isn't.. I'm sorry
+Oscar: One of us will have to take it outside with him
+Oscar: And suicide along with all the zombies..
+Oscar: Or we could all die here together
+option-on 3
+option-on 2
+option-on 1
+option-off 4
+option-off 3
+option-off 2
+option-off 1
+return
+@1
+Sam:What?! Why me?!
+//show options
+option-on 6
+option-on 5
+option-off 3
+option-off 2
+option-off 1
+//hide options
+return
+@2
+Oscar:.. you are right
+Oscar: You got no knowledge of bombs.. you might not be able to do it anyway..
+Oscar: I want you to know I don't regret this journey..
+Oscar: Don't forget me, my friends.
+Oscar: Goodbye
+//end
+return
+@3
+Sam: Are you sure?
+Oscar: Jack..
+option-on 4
+option-on 5
+option-off 3
+option-off 2
+option-off 1
+return
+@4
+Sam: ..
+Oscar: ..
+Jack: Don't forget me
+Jack: Goodbye
+//end
+return
+@5
+option-on 3
+option-on 2
+option-on 1
+option-off 4
+option-off 3
+option-off 2
+option-off 1
+//reset all options
+return
+@6
+Sam: Please Jack.. I don't want to die..
+Sam: I am to scared..
+option-on 7
+option-on 5
+option-off 6
+option-off 3
+option-off 2
+option-off 1
+//end
+return
+@7
+Sam: I don't want to die..
+Jack: It will over in a blink of an eye
+Sam:.. Oscar bring me the bomb.. I probabley won't make the journey anyway
+sam: Thank you guys for everything!
+//end
+return
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">Sam you should do it</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">Oscar you should do it</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">I should do it</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text xml:space="preserve">I brought us into this mess, I will get us out</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text xml:space="preserve">No I didn't mean it</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>6</ID>
+                <Text xml:space="preserve">Sam you are injured and will probabley won't last anyway</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>7</ID>
+                <Text xml:space="preserve">Sam we have no other options</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>10</ID>
+            <Name>dEndDialog</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+Oscar: We got everything we need
+Oscar: Just give me a second..
+Oscar: ..
+Jack: What is it?
+Oscar: I just got it..
+Jack: What?
+Oscar: We can't active it remotly..
+Jack: What do you mean??
+Oscar: It means that when we turn the battery on
+Oscar: The bomb will detonate
+Jack: No there's got to be a way!
+Oscar: There isn't.. I'm sorry
+Oscar: One of us will have to take it outside with him
+Oscar: And suicide along with all the zombies..
+Oscar: Or we could die here together
+option-on 1
+option-on 2
+option-off 3
+option-off 4
+option-off 5
+return
+@1
+Oscar:Why me?
+//show options
+option-on 4
+option-on 3
+option-off 2
+option-off 5
+option-off 1
+//hide options
+return
+@2
+Oscar:Are you sure?
+option-on 3
+option-on 5
+option-off 2
+option-off 1
+option-off 4
+//end
+return
+@3
+option-on 1
+option-on 2
+option-off 3
+option-off 4
+option-off 5
+return
+@4
+Oscar:.. you are right
+Oscar: You got no knowledge of bombs.. you might not be able to do it anyway..
+Oscar: I want you to know I don't regret this journey..
+Oscar: Don't forget me, my friend.
+Oscar: Goodbye
+//end
+return
+@5
+Oscar:I'll show you how to detonate it..
+Jack: Don't let our dream die..
+Jack: The city is close.. I can feel it
+Jack: Goodbye my friend.
+//end
+return
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">Oscar you should do it</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">I should do it</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">No I didn't mean it</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text xml:space="preserve">Because You know how to detonate it.. if I try and fail we both dead anyway</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text xml:space="preserve">I brought us into this mess.. It's my responsibility to get you out</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+            </DialogOptions>
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -2858,6 +3418,26 @@ stop
           <Name>PlayerRoom</Name>
           <Type>int</Type>
           <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>toldAboutBomob</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>GotBattery</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>GotFertilizer</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>GotDrainCleaner</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
@@ -4476,6 +5056,26 @@ stop
                 </SubFolders>
                 <Sprites />
               </SpriteFolder>
+              <SpriteFolder Name="Zombie">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="424" Width="609" Height="768" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\Chars\Zombie\shooter_zombie_1.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="425" Width="609" Height="768" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\Chars\Zombie\shooter_zombie_2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="426" Width="609" Height="768" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\Chars\Zombie\shooter_zombie_3.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites />
           </SpriteFolder>
@@ -4727,7 +5327,18 @@ stop
                 </Sprites>
               </SpriteFolder>
             </SubFolders>
-            <Sprites />
+            <Sprites>
+              <Sprite Slot="429" Width="158" Height="37" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\InGame\Game 2\sCeneDead\main_menu_restart_norm.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="430" Width="158" Height="37" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\InGame\Game 2\sCeneDead\main_menu_restart_press.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="Items">
             <SubFolders>
@@ -4739,19 +5350,19 @@ stop
                       <FileName>C:\InGame\Game 2\Items\Inventory\Gun\gun_from_illus.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="42" Width="72" Height="92" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
-                    <Source>
-                      <FileName>C:\InGame\Game 2\Items\Inventory\Gun\animated\3.png</FileName>
-                    </Source>
-                  </Sprite>
-                  <Sprite Slot="43" Width="87" Height="103" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
-                    <Source>
-                      <FileName>C:\InGame\Game 2\Items\Inventory\Gun\animated\4.png</FileName>
-                    </Source>
-                  </Sprite>
                   <Sprite Slot="45" Width="36" Height="36" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
                     <Source>
                       <FileName>C:\InGame\Game 2\Items\Inventory\Gun\gun_mouse.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="43" Width="106" Height="114" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\Items\Inventory\Gun\animated\shooter_hand_1.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="427" Width="106" Height="114" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\Items\Inventory\Gun\animated\shooter_hand_2.png</FileName>
                     </Source>
                   </Sprite>
                 </Sprites>
@@ -4809,6 +5420,16 @@ stop
                       <FileName>C:\InGame\Game 2\Items\General\0.png</FileName>
                     </Source>
                   </Sprite>
+                  <Sprite Slot="42" Width="28" Height="55" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\Items\General\bullet.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="428" Width="21" Height="76" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\InGame\Game 2\Items\General\bullet_2.png</FileName>
+                    </Source>
+                  </Sprite>
                 </Sprites>
               </SpriteFolder>
               <SpriteFolder Name="explosive">
@@ -4852,7 +5473,13 @@ stop
                 </Sprites>
               </SpriteFolder>
             </SubFolders>
-            <Sprites />
+            <Sprites>
+              <Sprite Slot="431" Width="75" Height="74" ColorDepth="16" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\InGame\Game 2\Items\Inventory\Gefen\gefen_stick.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="ZombieTimer">
             <SubFolders />
@@ -5186,70 +5813,7 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>2000</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>1</ID>
-                    <Image>2001</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>2</ID>
-                    <Image>2002</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>3</ID>
-                    <Image>2003</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>4</ID>
-                    <Image>2004</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>5</ID>
-                    <Image>2005</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>6</ID>
-                    <Image>2006</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>7</ID>
-                    <Image>2007</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>8</ID>
-                    <Image>2008</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>9</ID>
-                    <Image>2009</Image>
+                    <Image>211</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -5262,71 +5826,8 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>2010</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>1</ID>
-                    <Image>2011</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>2</ID>
-                    <Image>2012</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>3</ID>
-                    <Image>2013</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>4</ID>
-                    <Image>2014</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>5</ID>
-                    <Image>2015</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>6</ID>
-                    <Image>2016</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>7</ID>
-                    <Image>2017</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>8</ID>
-                    <Image>2018</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>9</ID>
-                    <Image>2019</Image>
-                    <Flipped>False</Flipped>
+                    <Image>211</Image>
+                    <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
@@ -5338,70 +5839,7 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>2020</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>1</ID>
-                    <Image>2021</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>2</ID>
-                    <Image>2022</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>3</ID>
-                    <Image>2023</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>4</ID>
-                    <Image>2024</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>5</ID>
-                    <Image>2025</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>6</ID>
-                    <Image>2026</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>7</ID>
-                    <Image>2027</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>8</ID>
-                    <Image>2028</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>9</ID>
-                    <Image>2029</Image>
+                    <Image>211</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -5411,78 +5849,7 @@ stop
               <Loop>
                 <ID>3</ID>
                 <RunNextLoop>False</RunNextLoop>
-                <Frames>
-                  <ViewFrame>
-                    <ID>0</ID>
-                    <Image>2030</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>1</ID>
-                    <Image>2031</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>2</ID>
-                    <Image>2032</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>3</ID>
-                    <Image>2033</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>4</ID>
-                    <Image>2034</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>5</ID>
-                    <Image>2035</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>6</ID>
-                    <Image>2036</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>7</ID>
-                    <Image>2037</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>8</ID>
-                    <Image>2038</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>9</ID>
-                    <Image>2039</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                </Frames>
+                <Frames />
               </Loop>
             </Loops>
           </View>
@@ -5496,7 +5863,7 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>52</Image>
+                    <Image>305</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -5509,7 +5876,7 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>52</Image>
+                    <Image>305</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -5522,7 +5889,7 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>52</Image>
+                    <Image>305</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -5535,7 +5902,7 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>52</Image>
+                    <Image>305</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -6000,29 +6367,7 @@ stop
               <Loop>
                 <ID>0</ID>
                 <RunNextLoop>False</RunNextLoop>
-                <Frames>
-                  <ViewFrame>
-                    <ID>0</ID>
-                    <Image>42</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>1</ID>
-                    <Image>43</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>2</ID>
-                    <Image>42</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                </Frames>
+                <Frames />
               </Loop>
               <Loop>
                 <ID>1</ID>
@@ -6030,21 +6375,14 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>42</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>1</ID>
                     <Image>43</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <ID>2</ID>
-                    <Image>42</Image>
+                    <ID>1</ID>
+                    <Image>427</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -6057,21 +6395,14 @@ stop
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>42</Image>
-                    <Flipped>True</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>1</ID>
                     <Image>43</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <ID>2</ID>
-                    <Image>42</Image>
+                    <ID>1</ID>
+                    <Image>427</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -9722,6 +10053,11 @@ stop
                   </ViewFrame>
                 </Frames>
               </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
+              </Loop>
             </Loops>
           </View>
           <View>
@@ -11422,6 +11758,138 @@ stop
               </Loop>
             </Loops>
           </View>
+          <View>
+            <ID>12</ID>
+            <Name>Zombie</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>424</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>425</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>425</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>3</ID>
+                    <Image>424</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>424</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>425</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>425</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>3</ID>
+                    <Image>424</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>424</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>425</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>425</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>3</ID>
+                    <Image>424</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>13</ID>
+            <Name>ZombieDie</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>426</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
         </Views>
       </ViewFolder>
     </Views>
@@ -11505,7 +11973,7 @@ See KeyboardMovement.txt for details.
                     <DefaultVolume>-1</DefaultVolume>
                     <DefaultPriority>Inherit</DefaultPriority>
                     <DefaultRepeat>True</DefaultRepeat>
-                    <FileLastModifiedDate>2014-11-24 18:36:18Z</FileLastModifiedDate>
+                    <FileLastModifiedDate>2014-11-24 16:36:18Z</FileLastModifiedDate>
                   </AudioClip>
                 </AudioClips>
                 <AudioClipFolder>
@@ -11529,7 +11997,7 @@ See KeyboardMovement.txt for details.
                     <DefaultVolume>-1</DefaultVolume>
                     <DefaultPriority>Inherit</DefaultPriority>
                     <DefaultRepeat>True</DefaultRepeat>
-                    <FileLastModifiedDate>2014-11-24 19:23:34Z</FileLastModifiedDate>
+                    <FileLastModifiedDate>2014-11-24 17:23:34Z</FileLastModifiedDate>
                   </AudioClip>
                 </AudioClips>
                 <AudioClipFolder>
@@ -11553,7 +12021,7 @@ See KeyboardMovement.txt for details.
                     <DefaultVolume>-1</DefaultVolume>
                     <DefaultPriority>Inherit</DefaultPriority>
                     <DefaultRepeat>False</DefaultRepeat>
-                    <FileLastModifiedDate>2013-05-10 03:50:20Z</FileLastModifiedDate>
+                    <FileLastModifiedDate>2013-05-10 00:50:20Z</FileLastModifiedDate>
                   </AudioClip>
                 </AudioClips>
                 <AudioClipFolder>
@@ -11577,7 +12045,7 @@ See KeyboardMovement.txt for details.
                     <DefaultVolume>-1</DefaultVolume>
                     <DefaultPriority>Inherit</DefaultPriority>
                     <DefaultRepeat>Inherit</DefaultRepeat>
-                    <FileLastModifiedDate>2014-11-24 18:31:47Z</FileLastModifiedDate>
+                    <FileLastModifiedDate>2014-11-24 16:31:47Z</FileLastModifiedDate>
                   </AudioClip>
                 </AudioClips>
                 <AudioClipFolder>
@@ -11601,7 +12069,7 @@ See KeyboardMovement.txt for details.
                     <DefaultVolume>-1</DefaultVolume>
                     <DefaultPriority>Inherit</DefaultPriority>
                     <DefaultRepeat>Inherit</DefaultRepeat>
-                    <FileLastModifiedDate>2014-11-26 19:14:31Z</FileLastModifiedDate>
+                    <FileLastModifiedDate>2014-11-26 17:14:31Z</FileLastModifiedDate>
                   </AudioClip>
                 </AudioClips>
                 <AudioClipFolder>
@@ -11628,6 +12096,89 @@ See KeyboardMovement.txt for details.
                     <FileLastModifiedDate>2014-11-26 17:14:33Z</FileLastModifiedDate>
                   </AudioClip>
                 </AudioClips>
+                <AudioClipFolder>
+                  <DefaultVolume>100</DefaultVolume>
+                  <DefaultPriority>Inherit</DefaultPriority>
+                  <DefaultRepeat>Inherit</DefaultRepeat>
+                  <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
+                  <DefaultType>2</DefaultType>
+                </AudioClipFolder>
+              </AudioClipFolder>
+              <AudioClipFolder Name="Shack">
+                <SubFolders />
+                <AudioClips>
+                  <AudioClip>
+                    <ScriptName>aEgypt</ScriptName>
+                    <SourceFileName xml:space="preserve">C:\InGame\Game 2\Music\BackGround\176182__freddyfool__soundscape-two-thrill-from-egypt.mp3</SourceFileName>
+                    <Index>20</Index>
+                    <Type>2</Type>
+                    <BundlingType>InSeparateVOX</BundlingType>
+                    <FileType>MP3</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2014-11-26 17:14:43Z</FileLastModifiedDate>
+                  </AudioClip>
+                </AudioClips>
+                <AudioClipFolder>
+                  <DefaultVolume>100</DefaultVolume>
+                  <DefaultPriority>Inherit</DefaultPriority>
+                  <DefaultRepeat>Inherit</DefaultRepeat>
+                  <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
+                  <DefaultType>2</DefaultType>
+                </AudioClipFolder>
+              </AudioClipFolder>
+              <AudioClipFolder Name="Move12">
+                <SubFolders />
+                <AudioClips>
+                  <AudioClip>
+                    <ScriptName>aUndeadLow</ScriptName>
+                    <SourceFileName xml:space="preserve">C:\InGame\Game 2\Music\BackGround\Undead Rising Loop Pack\Mp3\Undead Rising (Low Tension 1).mp3</SourceFileName>
+                    <Index>21</Index>
+                    <Type>2</Type>
+                    <BundlingType>InSeparateVOX</BundlingType>
+                    <FileType>MP3</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>True</DefaultRepeat>
+                    <FileLastModifiedDate>2014-11-24 17:23:39Z</FileLastModifiedDate>
+                  </AudioClip>
+                </AudioClips>
+                <AudioClipFolder>
+                  <DefaultVolume>100</DefaultVolume>
+                  <DefaultPriority>Inherit</DefaultPriority>
+                  <DefaultRepeat>Inherit</DefaultRepeat>
+                  <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
+                  <DefaultType>2</DefaultType>
+                </AudioClipFolder>
+              </AudioClipFolder>
+              <AudioClipFolder Name="Move23">
+                <SubFolders />
+                <AudioClips>
+                  <AudioClip>
+                    <ScriptName>aUndeadRisingHigh2</ScriptName>
+                    <SourceFileName xml:space="preserve">C:\InGame\Game 2\Music\BackGround\Undead Rising Loop Pack\Mp3\Undead Rising (High Tension 2).mp3</SourceFileName>
+                    <Index>22</Index>
+                    <Type>2</Type>
+                    <BundlingType>InSeparateVOX</BundlingType>
+                    <FileType>MP3</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>True</DefaultRepeat>
+                    <FileLastModifiedDate>2014-11-24 17:23:37Z</FileLastModifiedDate>
+                  </AudioClip>
+                </AudioClips>
+                <AudioClipFolder>
+                  <DefaultVolume>100</DefaultVolume>
+                  <DefaultPriority>Inherit</DefaultPriority>
+                  <DefaultRepeat>Inherit</DefaultRepeat>
+                  <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
+                  <DefaultType>2</DefaultType>
+                </AudioClipFolder>
+              </AudioClipFolder>
+              <AudioClipFolder Name="End">
+                <SubFolders />
+                <AudioClips />
                 <AudioClipFolder>
                   <DefaultVolume>100</DefaultVolume>
                   <DefaultPriority>Inherit</DefaultPriority>
